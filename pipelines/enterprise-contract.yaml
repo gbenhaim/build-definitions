@@ -114,7 +114,7 @@ spec:
           # Set this true because Chains in default Konflux does not create Rekor entries
           # when signing things. It will be ignored if any of the CERTIFICATE_* params
           # because keyless verification does require Rekor.
-          value: "true"
+          value: "false"
 
         - name: CERTIFICATE_OIDC_ISSUER
           value: "$(tasks.collect-keyless-params.results.defaultOIDCIssuer)"
